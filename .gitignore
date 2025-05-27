@@ -33,3 +33,4 @@ build/
 .vscode/
 .idea/
 
+echo "*:Zone.Identifier" >> .gitignore
