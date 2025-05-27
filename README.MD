@@ -13,17 +13,26 @@ Esta é uma API desenvolvida com Spring Boot para processar pedidos e alocar pro
 - Maven (ou utilize o wrapper `./mvnw`).
 
 ---
-
 ### 🛠️ Passos para rodar a aplicação
 
-1. **Gere o `.jar` da aplicação**:
+1. **Gerar o `.jar` da aplicação**:
+    
+    ```bash
+    ./mvnw clean package -DskipTests
+    ```
 
-   `./mvnw clean package -DskipTests`
-2. **Construa a imagem Docker**:
+2. **Construir a imagem Docker**:
+    
+    ```bash
+    docker build -t embalagem-api .
+    ```
 
-   `docker build -t embalagem-api .`
+3. **Executar o container**:
+    
+    ```bash
+    docker run -p 8080:8080 embalagem-api
+    ```
 
-3. **Rode o container**:
+4. **Acessar a documentação da API**:
 
-   `docker run -p 8080:8080 embalagem-api`
-
+    [http://localhost:8080/swagger-ui/index.html#/](http://localhost:8080/swagger-ui/index.html#/)
