@@ -18,8 +18,9 @@ Esta é uma API desenvolvida com Spring Boot para processar pedidos e alocar pro
 1. **Gerar o `.jar` da aplicação**:
     
     ```bash
-    ./mvnw clean package -DskipTests
+    mvnw clean package -DskipTests
     ```
+    OBS: Recomendo rodar diretamente na aba do maven no intellij
 
 2. **Construir a imagem Docker**:
     
